@@ -1,0 +1,136 @@
+/* Reset & Box Model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Times New Roman', serif;
+  background: linear-gradient(to bottom right, #fddde6, #f8a5c2); /* Light to medium pink gradient */
+  color: #880e4f; /* Deep rose for main text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+/* Game Container */
+.container {
+  background: rgba(255, 192, 203, 0.9); /* Light pink container */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  width: 360px;
+  max-width: 100%;
+  backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading */
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ad1457; /* Medium-deep pink */
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Buttons Section */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.btn {
+  flex: 1;
+  padding: 12px 0;
+  font-size: 16px;
+  background: linear-gradient(135deg, #f06292, #ec407a); /* Vibrant to deeper pink */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+  text-align: center;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  background: linear-gradient(135deg, #d81b60, #880e4f); /* Deep pink on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+.btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+/* Result Section */
+.result p {
+  font-size: 20px;
+  color: #880e4f;
+  margin: 10px 0;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#userChoice, #computerChoice {
+  font-weight: 600;
+  color: #c2185b;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+#winner {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ad1457;
+  margin-top: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+#winner.tie {
+  color: #f48fb1;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 500px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+
+  .result p {
+    font-size: 18px;
+  }
+
+  #userChoice, #computerChoice {
+    font-size: 20px;
+  }
+}

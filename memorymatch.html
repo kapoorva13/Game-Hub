@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Memory Match Game</title>
+  <link rel="stylesheet" href="stylem.css">
+</head>
+<body>
+  <h1>🧠 Memory Match Game</h1>
+  
+  <div class="controls">
+    <label for="emojiSelect">Choose Emojis:</label>
+    <select id="emojiSelect">
+      <option value="fruits">Fruits</option>
+      <option value="animals">Animals</option>
+      <option value="faces">Faces</option>
+      <option value="sports">Sports</option>
+    </select>
+    
+    <button onclick="startGame()">Start Game</button>
+  </div>
+  
+  <div class="game-container" id="game-board"></div>
+  
+  <div id="status"></div>
+  
+  <script src="scriptm.js"></script>
+</body>
+</html>

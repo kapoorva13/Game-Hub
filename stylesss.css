@@ -1,0 +1,100 @@
+body {
+      font-family: 'Times New Roman', serif;
+  text-align: center;
+  background-color: #dcedc1;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #01497c;
+}
+
+.controls {
+  margin-bottom: 15px;
+}
+
+select, button {
+  padding: 6px 12px;
+  margin-left: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #84e3c8;
+  color: #01497c;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a8e6cf;
+}
+
+.scoreboard {
+  margin-bottom: 10px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  color: #013a63;
+}
+
+.turn-indicator {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2C7DA0;
+}
+
+.board {
+  display: grid;
+  justify-content: center;
+  gap: 4px;
+  margin: 20px auto;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #01497c;
+  border-radius: 50%;
+}
+
+.line {
+  background-color: transparent;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.h-line {
+  width: 40px;
+  height: 10px;
+}
+
+.v-line {
+  width: 10px;
+  height: 40px;
+}
+
+.line.taken {
+  background-color: #61a5c2;
+}
+
+.box {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.p1 {
+  background-color: #ff8b94;
+}
+
+.p2 {
+  background-color: #ffaaa5;
+}
